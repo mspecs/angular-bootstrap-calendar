@@ -217,6 +217,13 @@
 .cal-slide-content ul li.dragging-active .event-item {
   color: black;
 }
+.calendar-event-web-link {
+  color: #4CBBFF;
+  font-weight: bold;
+}
+.calendar-event-web-link:hover {
+  color: #00d4b4;
+}
 .cal-week-box {
   position: relative;
 }
@@ -380,6 +387,9 @@
 .day-highlight.dh-event-special:hover,
 .day-highlight.dh-event-special {
   background-color: #ffe6ff;
+}
+.event-organizer {
+  padding-left: 20px;
 }
 .cal-row-head [class*="cal-cell"]:first-child,
 .cal-row-head [class*="cal-cell"] {
