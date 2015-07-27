@@ -38,7 +38,7 @@
                 <a ng-if="event.webLink" class="calendar-event-web-link" target="_blank" ng-href="{{event.webLink}}">web
                     link</a>
                 <br/>
-                <span ng-if="event.organizer">Organizer: {{event.organizer.name}} {{event.organizer.email}}</span>
+                <span class="event-organizer" ng-if="event.organizer">Organizer: {{event.organizer.name}} {{event.organizer.email}}</span>
             </li>
 
         </ul>
