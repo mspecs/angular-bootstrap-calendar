@@ -55,6 +55,15 @@
   margin-top: 28px;
 }
 
+.calendar-event-web-link {
+    color: #4CBBFF;
+    font-weight: bold;
+}
+
+.calendar-event-web-link:hover {
+    color: #00d4b4;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
