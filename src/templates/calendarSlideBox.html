@@ -14,10 +14,11 @@
                         class="event-item"
                         ng-click="vm.onEventClick({calendarEvent: event})">
                     <span ng-bind-html="vm.$sce.trustAsHtml(event.title)"></span>
-                    <span ng-show="isMonthView">(<span
+                    <span ng-show="isMonthView && !event.isAllDay">(<span
                             ng-bind="event.startsAt | calendarDate:'time':true"></span>)</span>
-                    <span ng-show="isYearView">(<span
+                    <span ng-show="isYearView && !event.isAllDay">(<span
                             ng-bind="event.startsAt | calendarDate:'datetime':true"></span>)</span>
+                    <span ng-show="event.isAllDay">Hela dagen</span>
                 </a>
 
                 <a
