@@ -18,7 +18,7 @@
                             ng-bind="event.startsAt | calendarDate:'time':true"></span>)</span>
                     <span ng-show="isYearView && !event.isAllDay">(<span
                             ng-bind="event.startsAt | calendarDate:'datetime':true"></span>)</span>
-                    <span ng-show="event.isAllDay">Hela dagen</span>
+                    <span ng-show="event.isAllDay" class="all-day">(Hela dagen)</span>
                 </a>
 
                 <a
