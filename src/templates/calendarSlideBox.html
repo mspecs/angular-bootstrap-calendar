@@ -35,10 +35,9 @@
                         ng-bind-html="vm.$sce.trustAsHtml(vm.deleteEventHtml)"
                         ng-click="vm.onDeleteEventClick({calendarEvent: event})">
                 </a>
-                <a ng-if="event.webLink" class="calendar-event-web-link" target="_blank" ng-href="{{event.webLink}}">web
-                    link</a>
+                <a ng-if="event.webLink" class="calendar-event-web-link" target="_blank" ng-href="{{event.webLink}}"><translate>CALENDAR_WEB_LINK</translate></a>
                 <br/>
-                <span ng-if="event.organizer">Organizer: {{event.organizer.name}} {{event.organizer.email}}</span>
+                <span ng-if="event.organizer"><translate>CALENDAR_ORGANIZER</translate>: {{event.organizer.name}} {{event.organizer.email}}</span>
             </li>
 
         </ul>
