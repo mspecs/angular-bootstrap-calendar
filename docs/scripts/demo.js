@@ -37,6 +37,19 @@ angular
                 recursOn: 'year',
                 draggable: true,
                 resizable: true
+            }, {
+                title: 'all day event',
+                type: 'deal',
+                startsAt: moment().startOf('week').subtract(2, 'days').add(8, 'hours').toDate(),
+                endsAt: moment().startOf('week').add(1, 'week').add(9, 'hours').toDate(),
+                draggable: true,
+                resizable: true,
+                isAllDay: true,
+                organizer: {
+                    name: 'Rasul Niyazimbetov',
+                    email: 'rasul.niyazimbetov@mspecs.se'
+                },
+                webLink: 'http://google.com'
             }
         ];
 
